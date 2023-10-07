@@ -58,7 +58,7 @@
 </head>
 <body>
     <header>
-        <h1>Ahmed Ismail</h1>
+        <h1 id="name" onclick="changeColor()">Your Name</h1>
     </header>
     <div class="contact-info">
         <p>Email: <a href="mailto:your@email.com">ahmedismailmohamed@lewisu.edu</a></p>
@@ -93,13 +93,11 @@
         <li><a href="https://www.forbes.com/sites/forbestechcouncil/2022/07/20/a-brief-history-of-touchscreen-technology-from-the-iphone-to-multi-user-videowalls/#:~:text=1965%3A%20E.A.%20Johnson,name%20was%20Eric%20Arthur%20Johnson." target="_blank">First Touchscreen</a></li>
         <li><a href="https://www.techtarget.com/searchnetworking/definition/ARPANET#:~:text=The%20U.S.%20Advanced%20Research%20Projects,for%20academic%20and%20research%20purposes." target="_blank">The First Computer Network</a></li>
     </ul>
-    <script>
-    // JavaScript code
-    document.getElementById("Ahmed Ismail").addEventListener("click", function() {
-        // Change the color to your favorite color (e.g., blue)
-        this.style.color = "blue";
-    });
-</script>
-
+     <script>
+        function changeColor() {
+            var nameElement = document.getElementById("name");
+            nameElement.style.color = "Black";
+        }
+    </script>
 </body>
 </html>
